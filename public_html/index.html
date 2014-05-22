@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>The fizzbuzz problem!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            function fizzDo() {
+                for (var i = 1; i <= 100; i++) {
+                    if (i % 15 == 0) {
+                        document.getElementById("show").innerHTML += "<br />" + "Fizzbuzz" + "<br />";
+                    }
+                    else if ((i%5) == 0) {
+                        document.getElementById("show").innerHTML += "<br />"+ "buzz" + "<br />";
+                    }
+                    else if ((i%3) == 0) {
+                        document.getElementById("show").innerHTML += "<br />" + "fizz" + "<br />";
+                    }
+                    else {
+                        document.getElementById("show").innerHTML += "<br />" + i + "<br />";
+                    }
+                }
+            }
+        </script>
+        <p> This is a program that writes integers from 1 to 100.
+            The program prints for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". 
+            For numbers which are multiples of both three and five print "FizzBuzz"  </p>
+        
+        <p id ="show"></p>
+        <button onclick="fizzDo();">Calculate</button>
+    </body>
+</html>
